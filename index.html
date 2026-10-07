@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1722" />
+  <title>CarKey Lab — مختبر برمجة الريموت</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">CK</div><div><strong>CarKey</strong><span>LAB / academy</span></div></div>
+      <div class="profile-card"><div class="avatar">م</div><div><b>متعلم جديد</b><small>مسار المبتدئ</small></div><span class="status-dot"></span></div>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> لوحة التعلم</button>
+        <button class="nav-item" data-view="learn"><span>◈</span> مسارات التعلم</button>
+        <button class="nav-item" data-view="simulator"><span>◉</span> المحاكي الآمن</button>
+        <button class="nav-item" data-view="practice"><span>✓</span> بنك التمارين</button>
+        <button class="nav-item" data-view="tutor"><span>✦</span> مساعد AI</button>
+      </nav>
+      <div class="sidebar-footer"><div class="mini-lock">▣</div><div><b>وضع التدريب الآمن</b><small>محاكاة فقط · بلا اتصال بمركبة</small></div></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar"><div class="crumb">المختبر / <b id="page-title">لوحة التعلم</b></div><div class="top-actions"><button class="icon-button" title="الإشعارات">♧<i></i></button><div class="level-pill"><span>المستوى 01</span><b id="points">120 XP</b></div></div></header>
+
+      <section id="dashboard" class="view active-view">
+        <div class="hero"><div class="hero-copy"><div class="eyebrow">مسار المبتدئ <span>● متاح الآن</span></div><h1>افهم الإشارة.<br/><em>اضبط الخطوة.</em></h1><p>مختبر تفاعلي يشرح منطق برمجة الريموتات، اختيار الجهاز، وقراءة إشارات التشخيص—بدون لمس سيارة فعلية.</p><div class="hero-actions"><button class="primary-btn" data-go="learn">تابع التعلم <span>←</span></button><button class="ghost-btn" data-go="simulator">افتح المحاكي</button></div></div><div class="hero-visual"><div class="signal-ring ring-1"></div><div class="signal-ring ring-2"></div><div class="signal-ring ring-3"></div><div class="key-fob">⌁<span>RF</span></div><div class="frequency">433.92 <small>MHz</small></div></div></div>
+        <div class="section-heading"><div><span class="eyebrow">نظرة سريعة</span><h2>تقدمك هذا الأسبوع</h2></div><button class="text-btn" data-go="practice">عرض كل التمارين ←</button></div>
+        <div class="stats-grid"><div class="stat-card"><span class="stat-icon cyan">↗</span><div><small>إتقان المسار</small><strong id="mastery">24%</strong><div class="progress"><i id="mastery-bar" style="width:24%"></i></div></div></div><div class="stat-card"><span class="stat-icon amber">◷</span><div><small>وقت التعلم</small><strong>01:42 <small>ساعة</small></strong><p>+18% عن الأسبوع الماضي</p></div></div><div class="stat-card"><span class="stat-icon violet">◇</span><div><small>تمارين مكتملة</small><strong id="completed-count">03 <small>/ 12</small></strong><p>استمر، أنت قريب من الشارة</p></div></div></div>
+        <div class="dashboard-grid"><div class="panel continue-panel"><div class="panel-head"><div><span class="eyebrow">متابعة ذكية</span><h3>الخطوة التالية المقترحة</h3></div><span class="chip cyan-chip">12 دقيقة</span></div><div class="lesson-row"><div class="lesson-number">02</div><div class="lesson-info"><h4>رحلة الإشارة: من الزر إلى وحدة التحكم</h4><p>تعرف على التشفير، التزامن، ولماذا تختلف خطوات التسجيل بين المنصات.</p><div class="lesson-meta"><span>◉ فيديو تفاعلي</span><span>◇ مبتدئ</span></div></div><button class="round-arrow" data-go="learn">←</button></div></div><div class="panel streak-panel"><div class="streak-top"><div><span class="eyebrow">ثباتك</span><h3>سلسلة التعلم</h3></div><strong>4 <small>أيام</small></strong></div><div class="week"><span class="done">س</span><span class="done">ح</span><span class="done">ن</span><span class="today">ث</span><span>ر</span><span>خ</span><span>ج</span></div><p>جلسة قصيرة اليوم تحافظ على الزخم.</p></div></div>
+        <div class="safety-note"><span>⚿</span><div><b>تذكير السلامة والمسؤولية</b><p>هذا المختبر يحاكي المفاهيم ولا يرسل أوامر. لا تطبق أي إجراء على مركبة دون تفويض قانوني، هوية مالك واضحة، ودليل المصنع.</p></div></div>
+      </section>
+
+      <section id="learn" class="view"><div class="page-intro"><div><span class="eyebrow">خارطة المعرفة</span><h1>مسارات التعلم</h1><p>ابنِ أساسًا قويًا قبل لمس أي جهاز: الإشارة أولًا، ثم المنهج.</p></div><div class="big-progress"><b>24%</b><span>منجز</span></div></div><div class="filter-row"><button class="filter active">الكل</button><button class="filter">أساسيات</button><button class="filter">أجهزة</button><button class="filter">تشخيص</button><span class="filter-spacer"></span><span class="muted">4 وحدات · 46 دقيقة</span></div><div class="course-list" id="course-list"></div></section>
+
+      <section id="simulator" class="view"><div class="page-intro"><div><span class="eyebrow">بيئة معزولة</span><h1>المحاكي الآمن</h1><p>تدرب على ترتيب القرار الصحيح. كل ما تراه هنا بيانات وهمية لا تتصل بأي مركبة.</p></div><div class="sim-status"><i></i> Sandbox / Offline</div></div><div class="sim-layout"><div class="panel sim-console"><div class="console-head"><span>مُحاكي تسلسل التسجيل</span><span class="console-lamp">● جاهز</span></div><div class="sim-controls"><label>منصة المركبة<select id="vehicle-select"><option value="generic">منصة تدريب عامة</option><option value="can">وحدة CAN افتراضية</option><option value="smart">منصة Smart Key افتراضية</option></select></label><label>نوع الجهاز<select id="device-select"><option>OBD-II Trainer</option><option>Bench Programmer</option><option>RF Analyzer (read-only)</option></select></label></div><div class="terminal" id="terminal"><div class="terminal-line muted-line">CARKEY LAB / SIMULATION KERNEL v1.4</div><div class="terminal-line">> اختر المنصة والجهاز ثم ابدأ التسلسل.</div></div><div class="sim-footer"><div class="sim-progress"><span id="sim-progress-text">0 / 5 خطوات</span><div class="progress"><i id="sim-bar"></i></div></div><button class="primary-btn" id="start-sim">ابدأ التسلسل <span>←</span></button></div></div><div class="panel steps-panel"><div class="panel-head"><div><span class="eyebrow">مسار القرار</span><h3>خطوات الجلسة</h3></div><span class="chip">تعليمي</span></div><div id="steps-list"></div><div class="sim-tip"><b>لماذا هذه الخطوة؟</b><p id="step-tip">ابدأ بإنشاء سياق آمن: تحقق من التفويض وبيانات المنصة قبل اختيار الإجراء.</p></div></div></div></section>
+
+      <section id="practice" class="view"><div class="page-intro"><div><span class="eyebrow">تدرب ثم تحقق</span><h1>بنك التمارين</h1><p>أسئلة قصيرة تقيس الفهم، لا حفظ تسلسل أزرار.</p></div><div class="score-ring"><b id="quiz-score">0</b><span>نقاط</span></div></div><div class="practice-layout"><div class="panel quiz-panel"><div class="quiz-top"><span class="chip cyan-chip">تمرين <b id="quiz-number">01</b> / 04</span><span class="muted">أساسيات الإشارة</span></div><div id="quiz-content"></div><div class="quiz-actions"><button class="ghost-btn" id="prev-quiz">السابق</button><button class="primary-btn" id="next-quiz">تحقق من الإجابة <span>←</span></button></div></div><div class="panel challenge-panel"><span class="eyebrow">تحدي اليوم</span><h3>رتّب قبل أن تنفذ</h3><p>اسحب المنطق معك: التفويض، التوافق، الطاقة، ثم التسجيل.</p><div class="challenge-bars"><span style="height:48%"></span><span style="height:76%"></span><span style="height:58%"></span><span style="height:92%"></span><span style="height:68%"></span><span style="height:84%"></span></div><b>+40 XP <small>عند إكمال تحدي الترتيب</small></b></div></div></section>
+
+      <section id="tutor" class="view"><div class="page-intro"><div><span class="eyebrow">معلّمك داخل المختبر</span><h1>مساعد AI</h1><p>اسأل عن المفاهيم، اطلب تبسيط مصطلح، أو اطلب تلميحًا للتمرين.</p></div><div class="ai-badge">✦ AI / محلي</div></div><div class="tutor-layout"><div class="panel chat-panel"><div class="chat-head"><div class="ai-orb">✦</div><div><b>CarKey Coach</b><small>متاح الآن · يجيب من محتوى المنهج</small></div><span class="online-dot"></span></div><div class="chat-messages" id="chat-messages"><div class="message bot">أهلًا بك في المختبر. ما المفهوم الذي تريد تفكيكه اليوم؟<small>CarKey Coach · الآن</small></div><div class="message bot">يمكنني شرح الفرق بين التشفير والتزامن، أو إعطاؤك تلميحًا دون كشف الإجابة.</div></div><div class="suggestions"><button>ما هو التزامن؟</button><button>أعطني تلميحًا</button><button>ما الخطوة الآمنة الأولى؟</button></div><form class="chat-input" id="chat-form"><input id="chat-input" placeholder="اكتب سؤالك هنا..." autocomplete="off"/><button aria-label="إرسال">↑</button></form></div><div class="panel tutor-side"><span class="eyebrow">ماذا يستطيع؟</span><div class="capability"><span>01</span><div><b>تبسيط المصطلح</b><p>حوّل المفاهيم التقنية إلى تشبيه عملي.</p></div></div><div class="capability"><span>02</span><div><b>تلميح دون حرق الحل</b><p>يدفعك للتفكير قبل إظهار الإجابة.</p></div></div><div class="capability"><span>03</span><div><b>حارس النطاق</b><p>يرفض الأكواد الحساسة ويعيدك للمسار الآمن.</p></div></div><div class="ai-disclaimer">المساعد الحالي يعمل محليًا على قاعدة المعرفة المضمنة. لا ترسل أرقام مفاتيح أو بيانات مركبات حقيقية.</div></div></div></section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
